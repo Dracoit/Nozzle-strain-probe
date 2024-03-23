@@ -5,6 +5,10 @@ no limited life in contrast to BL touch. better than an inductive probe as it do
 
 The project uses a 50Kg generic load cell with HX711 analog-to-digital converter along  with a cheap MW82F6D17 uController to read the digital signal of the ADC**.
 
+
+https://github.com/Dracoit/Nozzle-strain-probe/assets/52192140/756bc4d9-bc52-4580-972c-2afa97740d01
+
+
 **HX711 ADC**
   It is an easily available cheap & reliable PGA with little to no code required to use it optimally.
   It can read 80Sps which is sufficient for our purpose.
@@ -20,6 +24,8 @@ It is required to read the serial data from the HX711 and does the following:
   4. Monitor the reading constantly for changes in the load cell reading.
   5. If the Nozzle touches the build surface it changes its output pin to High to be read by the printer endstop pin.
   6. The code is still a work in progress to adjust the nozzle to bed force for triggering, however, the current default value works best.
+
+![HX711](https://github.com/Dracoit/Nozzle-strain-probe/assets/52192140/85645b01-0993-4826-9118-9710250b0d47)
 
  **Future Plans**
  In future, the probe can be integrated into Klipper ( as it is programming-friendly & has many feature expansion capabilities) for the following:
